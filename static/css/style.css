@@ -1,0 +1,203 @@
+/* static/css/style.css */
+/* Animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Welcome message animation */
+.welcome-message {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Message bubbles */
+.message-bubble {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.message-bubble:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.message-bubble::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5), transparent);
+}
+
+/* Chat container scrollbar */
+.chat-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chat-container::-webkit-scrollbar-track {
+    background: rgba(241, 241, 241, 0.5);
+    border-radius: 3px;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+    background: rgba(136, 136, 136, 0.5);
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.chat-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(85, 85, 85, 0.7);
+}
+
+/* Voice button animation */
+#voiceButton.animate-pulse {
+    animation: pulse 2s infinite;
+}
+
+/* Typing indicator */
+.typing-indicator {
+    display: flex;
+    gap: 3px;
+}
+
+.typing-indicator span {
+    animation: blink 1.4s infinite;
+    height: 6px;
+    width: 6px;
+    background: linear-gradient(to bottom right, #3b82f6, #8b5cf6);
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.typing-indicator span:nth-child(2) { animation-delay: .2s; }
+.typing-indicator span:nth-child(3) { animation-delay: .4s; }
+
+@keyframes blink {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(0.7); opacity: 0.4; }
+}
+
+/* Input focus effect */
+#userInput:focus {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Feature cards hover effect */
+.grid > div {
+    transition: all 0.3s ease;
+}
+
+.grid > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Glass morphism effect */
+.backdrop-blur {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* Audio player styling */
+audio {
+    width: 100%;
+    height: 32px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+audio::-webkit-media-controls-panel {
+    background: linear-gradient(to right, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+}
+
+/* Message animations */
+.flex.justify-start, .flex.justify-end {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Add to your static/css/style.css */
+
+.message-bubble {
+    transition: all 0.3s ease;
+}
+
+.message-bubble:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.message-bubble strong {
+    display: inline-block;
+    margin-bottom: 0.25rem;
+}
+
+.message-bubble div > strong:first-child {
+    font-size: 1.1em;
+    color: #047857;  /* Green-800 */
+}
+
+.message-bubble > div > div {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.prose {
+    max-width: none;
+    color: inherit;
+}
+
+.prose strong {
+    color: #047857;
+    font-weight: 600;
+}
+
+.prose p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.prose div {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+/* List styling */
+.prose div[class*="ml-4"] {
+    margin-left: 1rem;
+    padding-left: 1rem;
+    border-left: 2px solid rgba(4, 120, 87, 0.2);  /* Green-800 with opacity */
+}
+/* Add to your style.css */
+
+.rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+.message-bubble.rtl {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+[lang="ur"] input {
+    text-align: right;
+    direction: rtl;
+}
+
+.typing-indicator.rtl {
+    flex-direction: row-reverse;
+}

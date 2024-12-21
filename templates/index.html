@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F.A.R.M - Future of Agriculture with Revolutionary Model</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    typography: {
+                        DEFAULT: {
+                            css: {
+                                maxWidth: 'none',
+                                color: 'inherit',
+                                strong: {
+                                    color: '#047857',
+                                    fontWeight: '600',
+                                },
+                            },
+                        },
+                    },
+                },
+            },
+            plugins: [
+                tailwindcss.plugin.typography,
+            ],
+        }
+    </script>
+</head>
+
+<body class="bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 min-h-screen">
+    <div class="container mx-auto p-4 h-full">
+        <div class="max-w-4xl mx-auto">
+            <!-- App Header -->
+            <div class="text-center mb-6">
+                <h1
+                    class="text-4xl font-bold bg-gradient-to-r from-green-600 to-teal-600 bg-clip-text text-transparent">
+                    F.A.R.M
+                </h1>
+                <p class="text-gray-600 mt-2">Future of Agriculture with Revolutionary Model</p>
+            </div>
+
+            <!-- Main Interface -->
+            <div class="bg-white/80 backdrop-blur-lg rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
+                <!-- Interface Header -->
+                <div class="p-6 bg-gradient-to-r from-green-600 to-teal-600">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h2 class="text-2xl font-bold text-white">Smart Farming Assistant</h2>
+                            <p class="text-green-100 text-sm">Your AI-powered agricultural companion</p>
+                        </div>
+                        <div class="flex gap-2">
+                            <span
+                                class="inline-flex items-center px-3 py-1 rounded-full bg-white/20 text-white text-sm">
+                                <i class="fas fa-language mr-2"></i> Multilingual
+                            </span>
+                            <span
+                                class="inline-flex items-center px-3 py-1 rounded-full bg-white/20 text-white text-sm">
+                                <i class="fas fa-microphone mr-2"></i> Voice Enabled
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Categories -->
+                <div class="grid grid-cols-4 gap-2 p-4 bg-gray-50/50">
+                    <button class="category-btn p-2 rounded-lg hover:bg-green-100 transition-all text-sm text-center">
+                        <i class="fas fa-bug text-green-600"></i>
+                        <span class="block text-gray-600">Pest Control</span>
+                    </button>
+                    <button class="category-btn p-2 rounded-lg hover:bg-green-100 transition-all text-sm text-center">
+                        <i class="fas fa-cloud-rain text-green-600"></i>
+                        <span class="block text-gray-600">Irrigation</span>
+                    </button>
+                    <button class="category-btn p-2 rounded-lg hover:bg-green-100 transition-all text-sm text-center">
+                        <i class="fas fa-chart-line text-green-600"></i>
+                        <span class="block text-gray-600">Market Insights</span>
+                    </button>
+                    <button class="category-btn p-2 rounded-lg hover:bg-green-100 transition-all text-sm text-center">
+                        <i class="fas fa-seedling text-green-600"></i>
+                        <span class="block text-gray-600">Crop Health</span>
+                    </button>
+                </div>
+
+                <!-- Chat Messages -->
+                <div class="flex-1 overflow-y-auto p-6 space-y-4 chat-container min-h-[400px] max-h-[500px]"
+                    id="chatMessages">
+                    <!-- Welcome Message -->
+                    <div class="flex justify-start">
+                        <div class="max-w-[80%] welcome-message">
+                            <div
+                                class="bg-gradient-to-br from-green-50 to-teal-50 rounded-2xl px-6 py-4 message-bubble border border-green-100">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-gradient-to-r from-green-500 to-teal-500 flex items-center justify-center">
+                                        <i class="fas fa-robot text-white"></i>
+                                    </div>
+                                    <h3 class="font-semibold text-gray-800">F.A.R.M Assistant</h3>
+                                </div>
+                                <p class="text-gray-700">Welcome to F.A.R.M! I'm here to help with:</p>
+                                <ul class="mt-2 space-y-2">
+                                    <li class="flex items-center gap-2">
+                                        <i class="fas fa-disease text-green-500"></i>
+                                        <span>Crop disease detection</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <i class="fas fa-cloud-rain text-green-500"></i>
+                                        <span>Weather insights</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <i class="fas fa-chart-line text-green-500"></i>
+                                        <span>Market prices</span>
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <i class="fas fa-bug text-green-500"></i>
+                                        <span>Pest control</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Input and Processing Area -->
+                <div class="border-t border-gray-100 bg-white/60 backdrop-blur">
+                    <!-- Input Area -->
+                    <div class="p-4">
+                        <div class="flex gap-3 items-center">
+                            <!-- Language Toggle Button -->
+                            <button id="langButton" onclick="toggleLanguage()"
+                                class="p-4 rounded-full bg-green-500 text-white hover:bg-green-600 transition-all duration-200">
+                                <i class="fas fa-language"></i>
+                                <span class="lang-text">EN</span>
+                            </button>
+
+                            <!-- Voice Button -->
+                            <button id="voiceButton" onclick="toggleVoiceInput()"
+                                class="p-4 rounded-full bg-green-500 text-white hover:bg-green-600 transition-all duration-200">
+                                <i class="fas fa-microphone"></i>
+                            </button>
+
+                            <label for="imageUpload"
+                                class="p-4 rounded-full bg-green-500 text-white hover:bg-green-600 transition-all duration-200 cursor-pointer">
+                                <i class="fas fa-camera"></i>
+                            </label>
+                            <input type="file" id="imageUpload" accept="image/*" class="hidden"
+                                onchange="handleImageUpload(event)">
+
+                            <div class="flex-1 relative">
+                                <input type="text" id="userInput"
+                                    class="w-full p-4 pr-12 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:border-transparent bg-white/60 backdrop-blur"
+                                    placeholder="Ask about crops, weather, market prices..."
+                                    onkeypress="if(event.key === 'Enter') sendMessage(false)">
+                                <div class="absolute right-4 top-4 text-gray-400">
+                                    <i class="fas fa-seedling"></i>
+                                </div>
+                            </div>
+                            <button id="sendButton" onclick="sendMessage(false)" class="px-6 py-4 rounded-xl bg-green-500 text-white hover:bg-green-600 transition-all duration-200
+                                           flex items-center gap-2">
+                                <span>Send</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Processing Status Area -->
+                    <div id="processingArea" class="px-4 py-2 border-t border-gray-100 hidden">
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <div class="animate-spin">
+                                <i class="fas fa-circle-notch"></i>
+                            </div>
+                            <span id="processingStatus">Processing your request...</span>
+                        </div>
+                    </div>
+
+                    <!-- Image Preview Area -->
+                    <div id="imagePreview" class="hidden px-4 py-2 border-t border-gray-100">
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">Selected Image:</span>
+                            <button onclick="clearImageUpload()" class="text-red-500 hover:text-red-600">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <img id="previewImg" src="" alt="Preview" class="mt-2 max-h-32 rounded-lg">
+                        <div class="mt-2 text-sm text-gray-500">
+                            Click Send to analyze the image
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features Section -->
+            <div class="mt-8 grid grid-cols-3 gap-4">
+                <div class="bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-md border border-gray-100">
+                    <div class="text-green-500 mb-2">
+                        <i class="fas fa-cloud-sun text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Weather Insights</h3>
+                    <p class="text-sm text-gray-600">Smart irrigation advice</p>
+                </div>
+                <div class="bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-md border border-gray-100">
+                    <div class="text-green-500 mb-2">
+                        <i class="fas fa-microscope text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Disease Detection</h3>
+                    <p class="text-sm text-gray-600">AI-powered diagnosis</p>
+                </div>
+                <div class="bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-md border border-gray-100">
+                    <div class="text-green-500 mb-2">
+                        <i class="fas fa-chart-bar text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Market Analysis</h3>
+                    <p class="text-sm text-gray-600">Real-time price updates</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Indicator -->
+    <div id="loadingIndicator"
+        class="hidden fixed top-4 right-4 bg-white/90 backdrop-blur p-4 rounded-xl shadow-lg border border-gray-100">
+        <div class="flex items-center gap-3">
+            <div class="typing-indicator">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <span class="text-gray-600">Processing...</span>
+        </div>
+    </div>
+
+    <script src="/static/js/main.js"></script>
+</body>
+
+</html>

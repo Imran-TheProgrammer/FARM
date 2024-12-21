@@ -1,0 +1,198 @@
+{
+    "Apple___Apple_scab": {
+        "name": "Apple Scab",
+        "description": "A fungal disease that causes dark, scaly lesions on apple tree leaves and fruit.",
+        "treatments": [
+            "Apply fungicide early in the growing season",
+            "Remove and destroy infected leaves",
+            "Ensure good air circulation by proper pruning",
+            "Clean up fallen leaves and fruit in autumn"
+        ]
+    },
+    "Apple___Black_rot": {
+        "name": "Black Rot",
+        "description": "A fungal disease affecting apples, causing leaf spots and fruit rot.",
+        "treatments": [
+            "Prune out dead or diseased wood",
+            "Remove mummified fruit",
+            "Apply appropriate fungicides",
+            "Maintain good garden sanitation"
+        ]
+    },
+    "Apple___Cedar_apple_rust": {
+        "name": "Cedar Apple Rust",
+        "description": "A fungal disease requiring both apple and cedar trees to complete its life cycle.",
+        "treatments": [
+            "Remove nearby cedar trees if possible",
+            "Apply preventive fungicides",
+            "Plant resistant varieties",
+            "Maintain good air circulation"
+        ]
+    },
+    "Apple___healthy": {
+        "name": "Healthy Apple Tree",
+        "description": "The plant appears healthy with no visible signs of disease.",
+        "treatments": [
+            "Continue regular monitoring",
+            "Maintain current care practices",
+            "Follow preventive measures"
+        ]
+    },
+    "Corn___Cercospora_leaf_spot": {
+        "name": "Corn Cercospora Leaf Spot",
+        "description": "A fungal disease causing small, circular spots on corn leaves.",
+        "treatments": [
+            "Apply appropriate fungicides",
+            "Practice crop rotation",
+            "Improve air circulation",
+            "Remove infected debris"
+        ]
+    },
+    "Corn___Common_rust": {
+        "name": "Common Corn Rust",
+        "description": "A fungal disease causing reddish-brown pustules on leaves.",
+        "treatments": [
+            "Plant resistant hybrids",
+            "Apply fungicides when necessary",
+            "Monitor fields regularly",
+            "Avoid overhead irrigation"
+        ]
+    },
+    "Corn___Northern_Leaf_Blight": {
+        "name": "Northern Corn Leaf Blight",
+        "description": "A fungal disease causing long, cigar-shaped lesions on leaves.",
+        "treatments": [
+            "Use resistant varieties",
+            "Apply foliar fungicides",
+            "Practice crop rotation",
+            "Remove crop debris"
+        ]
+    },
+    "Corn___healthy": {
+        "name": "Healthy Corn",
+        "description": "The plant appears healthy with no visible signs of disease.",
+        "treatments": [
+            "Continue regular monitoring",
+            "Maintain current agricultural practices",
+            "Follow preventive measures"
+        ]
+    },
+    "Potato___Early_blight": {
+        "name": "Potato Early Blight",
+        "description": "A fungal disease causing dark brown spots with concentric rings on leaves.",
+        "treatments": [
+            "Apply appropriate fungicides",
+            "Practice crop rotation",
+            "Remove infected leaves",
+            "Maintain proper plant spacing"
+        ]
+    },
+    "Potato___Late_blight": {
+        "name": "Potato Late Blight",
+        "description": "A devastating disease causing water-soaked spots and white fuzzy growth.",
+        "treatments": [
+            "Apply fungicides preventively",
+            "Monitor weather conditions",
+            "Remove infected plants",
+            "Improve air circulation"
+        ]
+    },
+    "Potato___healthy": {
+        "name": "Healthy Potato Plant",
+        "description": "The plant appears healthy with no visible signs of disease.",
+        "treatments": [
+            "Continue regular monitoring",
+            "Maintain current care practices",
+            "Follow preventive measures"
+        ]
+    },
+    "Tomato___Bacterial_spot": {
+        "name": "Tomato Bacterial Spot",
+        "description": "A bacterial disease causing small, dark spots on leaves and fruit.",
+        "treatments": [
+            "Apply copper-based bactericides",
+            "Remove infected plants",
+            "Avoid overhead irrigation",
+            "Practice crop rotation"
+        ]
+    },
+    "Tomato___Early_blight": {
+        "name": "Tomato Early Blight",
+        "description": "A fungal disease causing dark spots with concentric rings on leaves.",
+        "treatments": [
+            "Apply fungicides",
+            "Remove lower infected leaves",
+            "Mulch around plants",
+            "Ensure good air circulation"
+        ]
+    },
+    "Tomato___Late_blight": {
+        "name": "Tomato Late Blight",
+        "description": "A serious disease causing large, dark blotches on leaves and fruit rot.",
+        "treatments": [
+            "Apply fungicides preventively",
+            "Remove infected plants",
+            "Improve air circulation",
+            "Plant resistant varieties"
+        ]
+    },
+    "Tomato___Leaf_Mold": {
+        "name": "Tomato Leaf Mold",
+        "description": "A fungal disease causing yellow spots on upper leaf surfaces and olive-green mold below.",
+        "treatments": [
+            "Improve air circulation",
+            "Reduce humidity",
+            "Apply fungicides",
+            "Remove infected leaves"
+        ]
+    },
+    "Tomato___Septoria_leaf_spot": {
+        "name": "Septoria Leaf Spot",
+        "description": "A fungal disease causing small, circular spots with dark borders on leaves.",
+        "treatments": [
+            "Apply fungicides",
+            "Remove infected leaves",
+            "Mulch around plants",
+            "Avoid overhead watering"
+        ]
+    },
+    "Tomato___Spider_mites": {
+        "name": "Spider Mites",
+        "description": "Tiny pests causing stippling on leaves and fine webbing.",
+        "treatments": [
+            "Apply insecticidal soap",
+            "Use neem oil",
+            "Increase humidity",
+            "Introduce predatory mites"
+        ]
+    },
+    "Tomato___Target_Spot": {
+        "name": "Target Spot",
+        "description": "A fungal disease causing circular spots with concentric rings.",
+        "treatments": [
+            "Apply fungicides",
+            "Improve air circulation",
+            "Remove infected leaves",
+            "Avoid overhead irrigation"
+        ]
+    },
+    "Tomato___Yellow_Leaf_Curl_Virus": {
+        "name": "Tomato Yellow Leaf Curl Virus",
+        "description": "A viral disease causing yellowing and curling of leaves, stunted growth.",
+        "treatments": [
+            "Remove infected plants",
+            "Control whitefly populations",
+            "Use resistant varieties",
+            "Install insect screens"
+        ]
+    },
+    "Tomato___healthy": {
+        "name": "Healthy Tomato Plant",
+        "description": "The plant appears healthy with no visible signs of disease.",
+        "treatments": [
+            "Continue regular monitoring",
+            "Maintain current care practices",
+            "Follow preventive measures"
+        ]
+    }
+}
